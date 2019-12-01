@@ -33,7 +33,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="section-title" (click)="nextExperience()">EXPERIENCE</h1>
+        <h1 class="section-title">EXPERIENCE</h1>
         <mat-tab-group [selectedIndex]="selectedExperience" (swipeleft)="nextExperience()" (swiperight)="previousExperience()">
           <mat-tab *ngFor="let experience of experiences" label="{{experience.company}}">
             <div class="container-fluid">
