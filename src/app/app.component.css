@@ -119,10 +119,7 @@ nav {
         width: 50px;
         transition-duration: 300ms;
         cursor: pointer;
-    } 
-        .mobile-nav:hover .fa-bars{
-            color: #5FC9DF;
-        }
+    }
 
     .fa-bars {
         transition-duration: 300ms;

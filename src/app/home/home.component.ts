@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-home',
@@ -64,10 +65,36 @@ export class HomeComponent implements OnInit {
     },
   ];
 
+  selectedExperience: number = 0;
+  selectedWork: number = 0;
+
   constructor() { }
 
   ngOnInit() {
     console.log(this.experiences);
   }
 
+  previousExperience() {
+    if(this.selectedExperience > 0) {
+      --this.selectedExperience;
+    }
+  }
+
+  nextExperience() {
+    if(this.selectedExperience < this.experiences.length - 1) {
+      ++this.selectedExperience;
+    }
+  }
+
+  previousWork() {
+    if(this.selectedWork > 0) {
+      --this.selectedWork;
+    }
+  }
+
+  nextWork() {
+    if(this.selectedWork < this.works.length - 1) {
+      ++this.selectedWork;
+    }
+  }
 }

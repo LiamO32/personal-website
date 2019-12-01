@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -29,7 +30,10 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     AnimateOnScrollModule.forRoot(),
   ],
-  providers: [],
+  providers: [{
+    provide: HAMMER_GESTURE_CONFIG, 
+    useClass: HammerGestureConfig
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
