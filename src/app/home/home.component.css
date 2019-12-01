@@ -97,14 +97,14 @@
     .me {
         width: 50%;
     }
-
-    .container {
-        padding: 0 50px;
-    }
-
+    
     .contact-button-container {
         margin-top: 20px;
         text-align: center;
+    }
+
+    .footer {
+        margin-top: 100px;
     }
  }
 
