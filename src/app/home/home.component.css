@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .landing-title-container {
@@ -99,5 +100,37 @@
 
     .container {
         padding: 0 50px;
+    }
+
+    .contact-button-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+ }
+
+ /* Small devices (landscape phones, 576px and under) */
+ @media (max-width: 576px) { 
+    .big-title {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+    }
+
+    .me {
+        width: 70%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        cursor:pointer;
+        transition-duration: 150ms;
+    }
+        .me:hover {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            margin-left: auto;
+            margin-top: auto;
+        }
+    .footer-text {
+        font-size: 10pt;
     }
  }
