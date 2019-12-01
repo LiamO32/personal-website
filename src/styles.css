@@ -75,8 +75,8 @@ ul {
     }
     .section {
         margin: auto auto;
-        margin-top: 50px;
-        padding-top: 50px;
+        margin-top: 100px;
+        padding-top: 0;
     }
  }
  
