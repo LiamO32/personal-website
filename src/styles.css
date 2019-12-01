@@ -1,0 +1,76 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ddd;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #18212A;
+}
+
+a {
+    font-family: 'B612 Mono', monospace;
+}
+
+.button-link {
+    color: #5FC9DF !important;
+    display: inline-block;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 20px;
+    border: 2px solid #5FC9DF;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.button-link:hover {
+    background-color: #5FC9DF;
+    color: #fff !important;
+}
+
+p, ul {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+ul {
+    list-style-image: url('assets/images/Bullet.png');
+    margin-left: 50px;
+}
+
+.section {
+    margin: auto 50px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.hidden {
+    opacity: 0;
+    transition-duration: 1s;
+    transform: translateX(-200px);
+}
+
+.fade-in-from-left {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.section-title {
+    letter-spacing: .5em;
+    margin-bottom: 50px;
+}
+
+/* Large devices (desktops, 992px and under) */
+@media (max-width: 992px) { 
+    .section-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+ }

@@ -1,0 +1,109 @@
+<div class="landing">
+  <div class="container landing-title-container">
+    <h1 class="big-title name">LIAM O'DONNELL</h1>
+    <h1 class="big-title what-i-am">SOFTWARE ENGINEER</h1>
+    <p>I’m a software engineer based in Los Angeles, California. I hold firm values in moving confidently and embracing
+      that failures and growth are part of a successful process.</p>
+    <a class="button-link" href="mailto:swdlodonnell@gmail.com?Subject=Reaching Out From Website">Reach Out</a>
+  </div>
+</div>
+<div animateOnScroll animationName="fade-in-from-left" class="section hidden" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="section-title">ABOUT ME</h1>
+        <p>I’m Liam O’Donnell, a software engineer based in Los Angeles, California who loves to build things that are
+          simple, beautiful, and functional.</p>
+        <p>I graduated from Baldwin Wallace University in 2019 and currently work remotely for Hyland Software based out
+          of Westlake, OH where I am helping push forward the company’s modernization efforts.</p>
+        <p>The technologies I use most day to day currently are:</p>
+        <ul>
+          <li>Angular</li>
+          <li>.NET Core C#</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 me-container">
+        <img class="me" src="../../assets/images/me.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+<div animateOnScroll animationName="fade-in-from-left" class="section hidden" id="experience">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="section-title">EXPERIENCE</h1>
+        <mat-tab-group>
+          <mat-tab *ngFor="let experience of experiences" label="{{experience.company}}">
+            <div class="container-fluid">
+              <div class="row experience">
+                <div class="col-lg-8">
+                  <h3>{{ experience.title }}</h3>
+                  <h6 class="subtitle">{{ experience.company }} | {{ experience.start }} - {{ experience.end }}</h6>
+                  <p>{{ experience.description }}</p>
+                  <ul>
+                    <li>Built a new healthcare product using Angular and .NET Core C#</li>
+                    <li>Pioneered the company’s modernized technology stack</li>
+                    <li>Provided developer input as architecture decisions were made</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>
+<div animateOnScroll animationName="fade-in-from-left" class="section hidden" id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="section-title">WORK</h1>
+        <mat-tab-group>
+          <mat-tab *ngFor="let work of works" label="{{ work.tab_title }}">
+            <div class="container-fluid">
+              <div class="row experience">
+                <div class="col-lg-8">
+                  <h3>{{ work.title }}</h3>
+                  <h6 class="subtitle">Created in {{ work.year_built }}</h6>
+                  <p>{{ work.description }}</p>
+                </div>
+              </div>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>
+<div animateOnScroll animationName="fade-in-from-left" class="section hidden" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="section-title">CONTACT</h1>
+        <div class="row">
+          <div class="col-lg-8">
+            <p>
+              Whether you are looking to inquire about freelance opportunies,
+              ask me any questions, or just say hi. My inbox is open to anyone
+              looking to reach out. I check my email often and I will get
+              back to you as soon as possible.
+            </p>
+            <a class="button-link" href="mailto:swdlodonnell@gmail.com?Subject=Reaching Out From Website">Reach Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="footer-text">Website by Liam O'Donnell</p>
+      </div>
+    </div>
+  </div>
+</div>

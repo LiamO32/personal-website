@@ -1,0 +1,94 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+$custom-primary: (
+  50: #c9edf4,
+  100: #b4e6f0,
+  200: #9fdfec,
+  300: #89d7e7,
+  400: #74d0e3,
+  500: #5FC9DF,
+  600: #4ac2db,
+  700: #34bbd6,
+  800: #28aec9,
+  900: #249bb4,
+  A100: #def4f8,
+  A200: #f4fbfd,
+  A400: #ffffff,
+  A700: #20899f,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$custom-accent: (
+  50: #b3b3b3,
+  100: #bfbfbf,
+  200: #cccccc,
+  300: #d9d9d9,
+  400: #e6e6e6,
+  500: #f2f2f2,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #f2f2f2,
+  A700: #ffffff,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: $black-87-opacity,
+    600: $black-87-opacity,
+    700: $black-87-opacity,
+    800: $black-87-opacity,
+    900: $black-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity,
+  )
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$personal-website-primary: mat-palette($custom-primary);
+$personal-website-accent: mat-palette($custom-accent, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$personal-website-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$personal-website-theme: mat-light-theme($personal-website-primary, $personal-website-accent, $personal-website-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($personal-website-theme);
+

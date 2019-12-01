@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div [className]="scrolledOffTop ? 'navbar shadow' : 'navbar'">
+  <div class="brand">
+    <img src="../assets/images/logo.png"/>
+  </div>
+  <nav [className]="menuOpen ? '' :  'nav-closed'">
+    <a class="nav-link" href="#about" (click)="toggleMenu()">About</a>
+    <a class="nav-link" href="#experience" (click)="toggleMenu()">Experience</a>
+    <a class="nav-link" href="#work" (click)="toggleMenu()">Work</a>
+    <a class="nav-link" href="#contact" (click)="toggleMenu()">Contact</a>
+    <a class="nav-link button-link">View Resume</a>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/swdlodonnell/"><i class="fab fa-2x fa-linkedin social"></i></a>
+        <i class="fab fa-2x fa-instagram social"></i>
+        <i class="fab fa-2x fa-facebook-square social"></i>
+        <i class="fab fa-2x fa-github-square social"></i>
+      </div>
+  </nav>
+  <div class="mobile-nav" (click)="toggleMenu()">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,103 @@
+.landing {
+    height: 100vh;
+    background-color: #202C39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-title-container {
+    margin: auto 50px;
+}
+
+.big-title {
+    font-size: 64px;
+    line-height: 60px;
+}
+
+.name {
+    color: #fff;
+    font-weight: 500;
+}
+
+.what-i-am {
+    font-weight: 200;
+}
+
+.landing p {
+    margin: 40px 0;
+    max-width: 800px;
+}
+
+.me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me {
+    width: 70%;
+    -webkit-box-shadow: 20px 20px 0px 0px rgba(95,201,223,.5);
+    -moz-box-shadow: 20px 20px 0px 0px rgba(95,201,223,.5);
+    box-shadow: 20px 20px 0px 0px rgba(95,201,223,.5);
+    cursor:pointer;
+    transition-duration: 150ms;
+}
+    .me:hover {
+        -webkit-box-shadow: 15px 15px 0px 0px rgba(95,201,223,1);
+        -moz-box-shadow: 15px 15px 0px 0px rgba(95,201,223,1);
+        box-shadow: 15px 15px 0px 0px rgba(95,201,223,1);
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+.experience {
+    padding-top: 50px;
+}
+.experience h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.subtitle {
+    color: #5FC9DF;
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0C1015;
+    margin-top: 200px;
+}
+
+.footer-text {
+    font-family: 'B612 Mono', monospace;
+    font-size: 16px;
+    margin: 0;
+}
+
+::ng-deep .mat-tab-header-pagination-chevron {
+    border-color: #ddd;
+}
+
+::ng-deep .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
+    border-color: #666;
+}
+
+::ng-deep .mat-tab-nav-bar, ::ng-deep .mat-tab-header {
+    border-bottom: 1px dotted #ddd;
+}
+
+/* Large devices (desktops, 992px and under) */
+@media (max-width: 992px) { 
+    .me {
+        width: 50%;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+ }
