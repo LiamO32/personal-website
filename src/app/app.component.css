@@ -90,7 +90,7 @@ nav {
         -webkit-box-shadow: -2px 0px 6px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: -2px 0px 6px 0px rgba(0,0,0,0.5);
         box-shadow: -2px 0px 6px 0px rgba(0,0,0,0.5);
-        transition-duration: 1s;
+        transition-duration: 500ms;
     }
 
     .nav-closed {
