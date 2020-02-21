@@ -5,6 +5,7 @@
     <p>I’m a software engineer based in Los Angeles, California. I hold firm values in moving confidently and embracing
       that failures and growth are part of a successful process.</p>
     <a class="button-link" href="mailto:swdlodonnell@gmail.com?Subject=Reaching Out From Website">Reach Out</a>
+    <!-- <a class="button-link" style="margin-left: 20px;" href="/freelance">Freelance Work</a> -->
   </div>
 </div>
 <div animateOnScroll animationName="fade-in-from-left" class="section hidden" id="about">
@@ -42,9 +43,7 @@
                   <h6 class="subtitle">{{ experience.company }} | {{ experience.start }} - {{ experience.end }}</h6>
                   <p>{{ experience.description }}</p>
                   <ul>
-                    <li>Built a new healthcare product using Angular and .NET Core C#</li>
-                    <li>Pioneered the company’s modernized technology stack</li>
-                    <li>Provided developer input as architecture decisions were made</li>
+                    <li *ngFor="let accomplishment of experience.accomplishments">{{ accomplishment }}</li>
                   </ul>
                 </div>
               </div>
