@@ -5,6 +5,7 @@
     <p>I’m a software engineer based in Los Angeles, California. I hold firm values in moving confidently and embracing
       that failures and growth are part of a successful process.</p>
     <a class="button-link" href="mailto:swdlodonnell@gmail.com?Subject=Reaching Out From Website">Reach Out</a>
+    <!-- <a class="button-link" style="margin-left: 20px;" href="/freelance">Freelance Work</a> -->
   </div>
 </div>
 <div animateOnScroll animationName="fade-in-from-left" class="section hidden" id="about">
@@ -12,8 +13,7 @@
     <div class="row">
       <div class="col-lg-8">
         <h1 class="section-title">ABOUT ME</h1>
-        <p>I’m Liam O’Donnell, a software engineer based in Los Angeles, California who loves to build things that are
-          simple, beautiful, and functional.</p>
+        <p>I love to build things that are simple, beautiful, and functional.</p>
         <p>I graduated from Baldwin Wallace University in 2019 and currently work remotely for Hyland Software based out
           of Westlake, OH where I am helping push forward the company’s modernization efforts.</p>
         <p>The technologies I use most day to day currently are:</p>
@@ -43,9 +43,7 @@
                   <h6 class="subtitle">{{ experience.company }} | {{ experience.start }} - {{ experience.end }}</h6>
                   <p>{{ experience.description }}</p>
                   <ul>
-                    <li>Built a new healthcare product using Angular and .NET Core C#</li>
-                    <li>Pioneered the company’s modernized technology stack</li>
-                    <li>Provided developer input as architecture decisions were made</li>
+                    <li *ngFor="let accomplishment of experience.accomplishments">{{ accomplishment }}</li>
                   </ul>
                 </div>
               </div>
